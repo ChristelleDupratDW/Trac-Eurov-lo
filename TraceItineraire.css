@@ -1,0 +1,51 @@
+html,
+body,
+figure,
+img {
+  padding: 0;
+  margin: 0;
+}
+
+#itineraire main {
+  background-color: white;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+}
+#itineraire main #map {
+  height: 100vh;
+}
+#itineraire main .etapes {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  overflow: hidden scroll;
+  height: 100vh;
+}
+#itineraire main .etapes article {
+  background-color: rgb(255, 227, 237);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 15px;
+  cursor: pointer;
+}
+#itineraire main .contenu_etape {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.7);
+  inset: 0;
+  z-index: 10000;
+  display: none;
+}
+#itineraire main .contenu_etape.visible {
+  display: block;
+}
+#itineraire main .contenu_etape div {
+  background-color: white;
+  position: absolute;
+  padding: 25px;
+  border-radius: 25px;
+  z-index: 10001;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}/*# sourceMappingURL=TraceItineraire.css.map */

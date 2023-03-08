@@ -7,7 +7,7 @@ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
 
 
 
-var gpx = 'Troncons/ardres-watten.gpx'; // URL to your GPX file or the GPX itself
+var gpx = 'http://90.110.218.245:5001/api/itineraires?populate=*/uploads/ardres_watten_a4de148685.gpx'; // URL to your GPX file or the GPX itself
 new L.GPX(gpx, {async: true}).on('loaded', function(e) {
   map.fitBounds(e.target.getBounds());
   
